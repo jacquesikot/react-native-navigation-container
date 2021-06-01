@@ -13,6 +13,11 @@
 
 The goal of `react-native-navigation-container` is to provide a convinient method to load static fonts and assets during the app splash screen and to provide useful utility features for better expo and react-native development.
 
+<p align="center">
+<img src="/.github/images/withoutNavContainer.gif" height="500" />
+<img src="/.github/images/withNavContainer.gif" height="500" />
+</p>
+
 ## Features
 
 - Load static images and fonts while splash screen is showing.
