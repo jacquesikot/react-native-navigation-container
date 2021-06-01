@@ -7,6 +7,11 @@
     "lint": "eslint --ext .tsx --ext .ts src/",
     "build": "tsc"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "keywords": [
     "react-native",
     "react",
