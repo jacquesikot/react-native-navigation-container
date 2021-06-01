@@ -1,8 +1,8 @@
 {
   "name": "react-native-navigation-container",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An enhanced react navigation container",
-  "main": "src/index.ts",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint --ext .tsx --ext .ts src/",
     "build": "tsc"
