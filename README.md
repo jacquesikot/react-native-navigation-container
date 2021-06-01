@@ -1,9 +1,8 @@
-# React-native-navigation-container
+# react-native-navigation-container
 
 ## Table of Contents
 
 - [About](#about)
-- [Getting Started](#getting_started)
 - [Usage](#usage)
 - [Contributing](./CONTRIBUTING.md)
 
@@ -11,24 +10,49 @@
 
 This is a wrapper around the react navigation - Navigation Container. It provides loading of static assests and a development navigation that maintains state after app refresh.
 
-## Getting Started <a name = "getting_started"></a>
+Features
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
+- Load static images and fonts while splash screen is loading.
+- Maintain navigation state after app refresh while in development mode
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+```
+yarn add react-native-navigation-container
+```
 
-Say what the step will be
-
-And repeat
-
-End with an example of getting some data out of the system or using it for a little demo.
+```
+npm install react-native-navigation-container
+```
 
 ## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
+Using the Navigation Container to Load static assests
+
+```
+import React from 'react';
+import { StatusBar } from 'expo-status-bar';
+import NavigationContainer from 'react-native-navigation-container'
+
+import { RootNav } from './src/navigation';
+
+const fonts = {
+  'SofiaPro-Black': require('../../assets/fonts/SofiaProBlack.otf'),
+  'SofiaPro-BlackItalic': require('../../assets/fonts/SofiaProBlackItalic.otf'),
+};
+
+
+const assets = [
+  require('../../assets/images/img1.png'),
+  require('../../assets/images/img2.png'),
+];
+
+export default function App() {
+  return (
+    <NavigationContainer fonts={fonts} assets={assets} stickyNav={true}>
+        <RootNav />
+        <StatusBar backgroundColor={theme.colors.white} />
+    </NavigationContainer>
+  );
+}
+```
