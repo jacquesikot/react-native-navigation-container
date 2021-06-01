@@ -11,7 +11,7 @@
 
 ## About <a name = "about"></a>
 
-The goal of `react-native-navigation-container` is to provide a convinient method to load static fonts and assets during the app splash screen and to provide useful utility features for better expo and react-native devlopment.
+The goal of `react-native-navigation-container` is to provide a convinient method to load static fonts and assets during the app splash screen and to provide useful utility features for better expo and react-native development.
 
 ## Features
 
@@ -24,7 +24,7 @@ This library is available on npm, install it with: `npm i react-native-navigatio
 
 ## Usage <a name = "usage"></a>
 
-Since `react-native-navigation-container` is an extension of the original react navigation `NavigationContainer`, it works in a similar fashion [react navigation - navigation container](https://reactnavigation.org/docs/navigation-container/).
+Since `react-native-navigation-container` is an extension of the original react navigation `NavigationContainer`, it works in a similar fashion as [react navigation - navigation container](https://reactnavigation.org/docs/navigation-container/).
 
 1. Import react-native-navigation-container:
 
@@ -39,7 +39,6 @@ export default function App() {
   return (
     <NavigationContainer>
       <RootNav />
-      <StatusBar backgroundColor={theme.colors.white} />
     </NavigationContainer>
   );
 }
@@ -66,7 +65,6 @@ export default function App() {
   return (
     <NavigationContainer fonts={fonts} assets={assets}>
       <RootNav />
-      <StatusBar backgroundColor={theme.colors.white} />
     </NavigationContainer>
   );
 }
@@ -79,7 +77,6 @@ export default function App() {
   return (
     <NavigationContainer fonts={fonts} assets={assets} stickyNav={true}>
       <RootNav />
-      <StatusBar backgroundColor={theme.colors.white} />
     </NavigationContainer>
   );
 }
@@ -89,7 +86,6 @@ export default function App() {
 
 ```javascript
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
 import NavigationContainer from 'react-native-navigation-container;
 
 import { RootNav } from './src/navigation';
@@ -98,20 +94,15 @@ export default function App() {
   return (
     <NavigationContainer fonts={fonts} assets={assets} stickyNav={true}>
         <RootNav />
-        <StatusBar style='auto' />
     </NavigationContainer>
   );
 }
 ```
 
-## Availble props
+## Available props
 
-| Name | Type | Description
-|
-| ---------------|-----------------|-------------------------------------------------------------
-
----
-
-| fonts | object | Fonts to be loaded into app
-| assests | array | Assets to be loaded into app
-| stickyNav | boolean | Maintains navigation state after app refresh - only in dev mode
+| Name      | type   | Description                                                     |
+| --------- | ------ | --------------------------------------------------------------- |
+| fonts     | object | Fonts to be loaded into app                                     |
+| assets    | array  | Static assets to be loaded into app                             |
+| stickyNav | bool   | Maintains navigation state after app refresh - only in dev mode |
