@@ -14,15 +14,14 @@
 The goal of `react-native-navigation-container` is to provide a convinient method to load static fonts and assets during the app splash screen and to provide useful utility features for better expo and react-native development.
 
 <p align="center">
-<p>
 <img src="/.github/images/withoutNavContainer.gif" height="500" />
-Without preloading assests, assests do not show immediately app loads.
-</p>
-<p>
+<span width='20px' />
 <img src="/.github/images/withNavContainer.gif" height="500" />
-With this `NavigationContainer`, assets are preloaded and show immediately after splash screen.
 </p>
-</p>
+
+First gif is without preloading assets using `NavigationContainer`. Second gif uses `NavigationContainer` to preload assets and it shows immediately after splash screen is done.
+
+If you're interested in the implementations of the animations above visit this [link](https://github.com/jacquesikot/React-Native-Fashion-App)
 
 ## Features
 
