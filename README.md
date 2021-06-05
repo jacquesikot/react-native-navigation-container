@@ -11,7 +11,7 @@
 
 ## About <a name = "about"></a>
 
-The goal of `react-native-navigation-container` is to provide a convinient method to load static fonts and assets during the app splash screen and to provide useful utility features for better expo and react-native development.
+The goal of `react-native-navigation-container` is to provide a convinient method to load static fonts and assets during the app splash screen and provide a development navigation that remains unchanged after app refresh.
 
 <p align="center">
 <img src="/.github/images/withoutNavContainer.gif" height="500" />
