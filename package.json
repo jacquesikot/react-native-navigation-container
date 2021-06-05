@@ -1,8 +1,11 @@
 {
   "name": "react-native-navigation-container",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An enhanced react navigation container",
   "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
     "lint": "eslint --ext .tsx --ext .ts src/",
     "build": "tsc"
@@ -52,8 +55,5 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
