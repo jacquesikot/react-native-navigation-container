@@ -1,5 +1,5 @@
 {
-    "include": ["src/**/*"],
+    "include": ["./src/**/*"],
     "exclude": [
       "node_modules",
       "babel.config.js",
@@ -10,7 +10,7 @@
       "lib": ["es5", "es6", "esnext.asynciterable"],
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": false,
-      "jsx": "react",
+      "jsx": "react-native",
       "moduleResolution": "node",
       "strict": true,
       "target": "esnext",
